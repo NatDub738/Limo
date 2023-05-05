@@ -1,0 +1,22 @@
+.link-button {
+    height: max-content;
+
+    @include font(1.8rem, 2.5rem, 600, $text-on-dark-bg);
+    text-transform: uppercase;
+    text-align: center;
+    word-break: break-all;
+
+    background-color: $coral;
+
+    &:hover {
+        box-shadow: 0 0 0.8rem rgb(102, 47, 47);
+    }
+
+    &:active {
+        box-shadow: inset 0 0 0.8rem rgb(102, 47, 47);
+    }
+    
+    &_short {
+        padding: 1.2rem 1.5rem;
+    }
+}

@@ -1,0 +1,22 @@
+@mixin flex (
+    $justify-content: flex-start,
+    $wrap: nowrap, 
+    $align-items: stretch, 
+    $direction: row,
+    $column-gap: null,
+    $row-gap: null
+) {
+    display: flex;
+    justify-content: $justify-content;
+    flex-wrap: $wrap;
+    align-items: $align-items;
+    flex-direction: $direction;
+    column-gap: $column-gap;
+    row-gap: $row-gap;
+}
+
+@mixin position ($position, $top, $left) {
+    position: $position;
+    top: $top;
+    left: $left;
+}

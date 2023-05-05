@@ -1,0 +1,18 @@
+.info-list-item {
+    position: relative;
+
+    margin-left: 7rem;
+
+    @include font(1.6rem, 2.2rem);
+
+    &::before {
+        content: '';
+
+        @include position(absolute, 0, -7rem);
+
+        width: 5.5rem;
+        height: 5.5rem;
+
+        background: no-repeat center;
+    }
+}

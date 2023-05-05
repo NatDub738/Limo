@@ -1,0 +1,109 @@
+.products-item {
+    position: relative;
+
+    @include flex ($direction: column);
+
+    width: 23.3%;
+    max-width: 36rem;
+    height: max-content;
+
+    font-family: 'Open Sans Bold', sans-serif;
+
+    &__product-link,
+    &__btn-add-to-cart,
+    &__rating {
+        display: none;
+    }
+
+    &:hover &__product-link,
+    &:hover &__btn-add-to-cart,
+    &:hover &__rating {
+        display: block;
+    }
+
+    @include screen-till($tablet) {
+        width: 34.3rem;
+    }
+
+    @include screen-between($tablet, $desktop) {
+        justify-content: center;
+        width: 48.5%;
+        max-width: none;
+    }
+
+    &__img {
+        height: 34.5rem;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__hidden-buttons {
+        display: grid;
+
+        width: 100%;
+        min-height: 33.5rem;
+        max-height: max-content;
+        margin-top: -33.5rem;
+    }
+
+    &__btn-favorites {
+        justify-self: end;
+
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+
+        &:hover {
+            transform: skew(-10deg);
+        }
+    
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    &__product-link {
+        justify-self: end;
+
+        margin-top: 3.7rem;
+        margin-right: 1.5rem;
+
+        &:hover {
+            transform: skew(-10deg);
+        }
+    
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    &__btn-add-to-cart {
+        justify-self: center;
+
+        width: 90%;
+        margin-top: 19.5rem;
+        padding: 1.2rem 0;
+    }
+
+    &__price {
+        margin-top: 2rem;
+
+        @include font(2.4rem, 3.3rem);
+    }
+
+    &__product-name {
+        margin-top: 0.5rem;
+
+        @include font(2rem, 2.7rem);
+
+        @include screen-till($tablet) {
+            margin-top: 0;
+        }
+    }
+
+    &__rating {
+        position: absolute;
+        bottom: -0.5rem;
+    }
+}

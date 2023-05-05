@@ -1,0 +1,22 @@
+.user-link {
+    position: relative;
+
+    &:hover {
+        transform: skew(-15deg);
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+
+    &::after {
+        content: '';
+
+        width: 2rem;
+        height: 2rem;
+
+        background-color: $circle-bg;
+        opacity: 0.6;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,50 @@
+.info-list {
+    @include flex (flex-start, wrap, $direction: column, $row-gap: 3rem);
+
+    max-width: 28.8rem;
+
+    &__title {
+        margin-bottom: 1rem;
+
+        @include font(1.6rem, 2.2rem);
+        font-weight: 700;
+    }
+
+    &__telephone-number {
+        &:hover {
+            color: $coral;
+        }
+    
+        &:active {
+            opacity: 0.6;
+        }      
+    }
+
+    &__email-link {
+        &:hover {
+            color: $coral;
+        }
+    
+        &:active {
+            opacity: 0.6;
+        }      
+    }
+
+    &__contact-us {
+        &::before {
+            background: url('../../img/mobile.svg');
+        }
+    }
+
+    &__email {
+        &::before {
+            background: url('../../img/email.svg');
+        }
+    }
+
+    &__location {
+        &::before {
+            background: url('../../img/location.svg');
+        }
+    }
+}

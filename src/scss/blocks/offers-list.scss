@@ -1,0 +1,62 @@
+.offers-list {
+    @include flex (center, wrap, center, row, 2rem);
+
+    @include screen-till($tablet) {
+        flex-direction: column;
+        row-gap: 1.2rem;
+    }
+
+    @include screen-between($tablet, $desktop) {
+        row-gap: 1.5rem;
+    }
+
+    @include screen-from($desktop) {
+        row-gap: 2rem;
+    }
+
+    &__link {
+        width: 42.6rem;
+        padding: 1.8rem 0;
+
+        @include font(1.4rem, 1.9rem);
+        text-align: center;
+        text-transform: uppercase;
+        word-break: normal;
+
+        border: 0.2rem solid $light-grey;
+
+        &:hover {
+            box-shadow: 0 0 2rem $light-grey;
+        }
+    
+        &:active {
+            box-shadow: inset 0 0 2rem $light-grey;
+        }
+
+        @include screen-till($tablet) {
+            width: 100%;
+            padding: 1.7rem 0;
+
+            @include font(1.65rem, 2.3rem);
+        }
+
+        @include screen-between($tablet, $desktop) {
+            width: 23.9rem;
+            padding: 1rem 0.5rem;
+
+            @include font(1.4rem, 1.9rem);
+        }
+    }
+
+    &__prize {
+        font-weight: 700;
+
+        @include screen-till($tablet) {
+            @include font(2.4rem, 3.2rem);
+        }
+
+        @include screen-from($desktop) {
+            @include font(1.8rem, 2.5rem);
+        }
+    }
+}

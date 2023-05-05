@@ -1,0 +1,66 @@
+.footer {
+    display: grid;
+    grid-auto-flow: row;
+    column-gap: 2vw;
+
+    width: 100%;
+    height: max-content;
+    padding: 4.6rem 0 0 0;
+
+    color: $grey;
+
+    background-color: $footer-bg;
+
+    @include screen-till($tablet) {
+        grid-template-columns: 100vw;
+    }
+
+    @include screen-between($tablet, $desktop) {
+        grid-template-columns: 50vw 20vw;
+    }
+
+    @include screen-from($desktop) {
+        grid-template-columns: 30vw 14vw 13vw;
+    }
+
+    &__list {
+        @include flex($wrap: wrap, $direction: column, $column-gap: 2rem, $row-gap: 1.5rem);
+
+        max-width: 144rem;
+    }
+
+    &__info-list {
+        margin-left: 7rem;
+
+        @include screen-till($tablet) {
+            margin-left: 4.5rem;
+        }
+    }
+
+    &__mobile-link {
+        display: none;
+
+        @include screen-till($tablet) {
+            display: block;
+
+            margin-top: 4rem;
+            width: 100%;
+
+            @include font(1.8rem, 2.5rem, 600, $coral);
+            text-align: center;
+            text-decoration: underline;
+        }
+    }
+
+    &__copyright {
+        @include screen-till($tablet) {
+            margin-top: 4rem;
+            padding: 1.5rem 0;
+        }
+
+        @include screen-between($tablet, $desktop) {
+            margin-top: 6rem;
+            padding: 1.5rem 0;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.discount-list {
+    @include flex (space-between, wrap, $column-gap: 2rem, $row-gap: 2rem);
+
+    @include screen-till($desktop) {
+        justify-content: center;
+    }
+
+    &__item {
+        @include flex ($direction: column);
+
+        @include screen-till($tablet) {
+            width: 100%;
+        }
+
+        @include screen-between($tablet, $desktop) {
+            width: 48.4%;
+        }
+
+        @include screen-till($desktop) {
+            padding: 2rem 3rem;
+        }
+
+        @include screen-from($desktop) {
+            width: 48.8%;
+            padding: 5rem 4.3rem;
+        }
+
+        &_collection-bg {
+            background: url('../../img/collection@2x.jpg') no-repeat center;
+            background-size: cover;
+    
+        }
+    
+        &_ceramic-plate-bg {
+            background: url('../../img/ceramic-plate@2x.jpg') no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &__sale-text {
+        @include screen-till($desktop) {
+            margin-bottom: 0.2rem;
+
+            @include font(1.8rem, 2.5rem);
+        }
+
+        @include screen-from($desktop) {
+            margin-bottom: 0.6rem;
+
+            @include font(2.4rem, 3.3rem);
+        }
+    }
+
+    &__product-name {
+        font-weight: 700;
+
+        @include screen-till($desktop) {
+            @include font(2.4rem, 3.3rem);
+        }
+
+        @include screen-from($desktop) {
+            @include font(3.2rem, 4.4rem);
+        }
+    }
+
+    &__product-link {
+        width: fit-content;
+
+        text-transform: uppercase;
+        text-decoration-line: underline;
+
+        @include screen-till($desktop) {
+            margin-top: 3.6rem;
+            margin-bottom: 4rem;
+
+            @include font(1.2rem, 1.6rem);
+        }
+
+        @include screen-from($desktop) {
+            margin-top: 10rem;
+            margin-bottom: 2rem;
+
+            @include font(1.6rem, 2.2rem);
+        }
+
+        &:hover {
+            color: $blue;
+        }
+    
+        &:active {
+            opacity: 0.6;
+        }
+    }
+}

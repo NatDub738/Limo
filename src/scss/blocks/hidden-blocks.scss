@@ -1,0 +1,12 @@
+@include screen-between($tablet, $desktop) {
+    .hidden-on-tablet {
+        display: none;
+    }
+}
+
+@include screen-till($tablet) {
+    .hidden-on-tablet,
+    .hidden-on-mobile {
+        display: none;
+    }
+}

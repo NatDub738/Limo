@@ -1,0 +1,19 @@
+.footer-column {
+    &__item {
+        &_bold-text {
+            margin-bottom: 0.5rem;
+
+            @include font(1.6rem, 2.2rem, 600, $dark-grey);
+        }
+    }
+
+    &__link {
+        &:hover {
+            color: $coral;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.products {
+    &__wrapper {
+        @include screen-till($tablet) {
+            @include flex ($direction: column, $align-items: center);
+
+            width: 100%;
+        }
+    }
+
+    &__list {
+        @include flex (space-between, wrap, $column-gap: 2rem, $row-gap: 3rem);
+
+        color: $black;
+
+        @include screen-till($tablet) {
+            width: 34.3rem;
+        }
+    }
+
+    &__item {
+        padding-bottom: 1.5rem;
+    }
+
+    &__title {
+        margin: 8.5rem 0 3rem 0;
+        width: 100%;
+
+        @include font(4.2rem, 5.7rem, 700, $black);
+
+        @include screen-till($tablet) {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+
+            width: 34.3rem;
+        }
+
+        @include screen-till($desktop) {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+
+            @include font(3.2rem, 4.3rem);
+        }
+    }
+
+    &__link-more-products {
+        @include flex (center);
+
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+
+        @include font(2.4rem, 3.3rem, 600, $light-grey);
+        text-align: center;
+        text-transform: uppercase;
+
+        @include screen-till($tablet) {
+            margin-top: 2.4rem;
+            margin-bottom: 4rem;
+        }
+
+        @include screen-till($desktop) {
+            margin-top: 4rem;
+            margin-bottom: 5rem;
+        }
+
+        &:hover {
+            box-shadow: 0 0 0.3rem $black;
+            border-radius: 2rem;
+            color: $black;
+        }
+    
+        &:active {
+            box-shadow: inset 0 0 0.3rem $black;
+            opacity: 0.6;
+        }
+    }
+}

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name = "description" content = "Модуль 6 - HTML и легкий CSS">
+        <title>Limo</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="burger-menu">
+                <input 
+                    id="header__menu-toggle"
+                    type="checkbox"
+                    class="burger-menu__toggle"
+                >
+                <label
+                    class="burger-menu__btn"
+                    for="header__menu-toggle"
+                >
+                  <span class="burger-menu__lines-btn"></span>
+                </label>
+            </div>
+            <img
+                class="header__logo"
+                src="img/logo.svg"
+                alt="Логотип"
+                width="77"
+                height="37"
+            >
+
+            <nav class="header__main-nav main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item main-nav__item_font-inter">
+                        <a class="main-nav__link">HOME</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item_font-inter">
+                        <a class="main-nav__link">ACCESSORIES</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link">SHOP</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link">MEDIA</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link">SHORTCODE</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link">FEATURES</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__user-menu">
+                <a
+                    href="#"
+                    class="header__favourites-link user-link"
+                >
+                    <img 
+                        src="img/favourites.svg"
+                        alt="Избранное"
+                        width="28"
+                        height="28"
+                    >
+                </a>
+                <a
+                    href="#"
+                    class="header__cart-link user-link"
+                >
+                <img 
+                    src="img/cart.svg"
+                    alt="Корзина"
+                    width="28"
+                    height="28"
+                >  
+                </a>
+            </div>
+        </header>
+
+        <main class="main">
+            <img
+                class="banner"
+                src="img/bg-flowers@2x.jpg"
+                alt="Красивые чашки с цветами"
+                
+            >
+
+            <div class="main__content-wrapper">
+                <ul class="discount-list">
+                    <li class="discount-list__item discount-list__item_collection-bg">
+                        <div class="discount-list__sale-text">
+                            Flat 30% Sale
+                        </div>
+                        <div class="discount-list__product-name">
+                            Collection
+                        </div>
+                        <a
+                            href="#"
+                            class="discount-list__product-link"
+                        >
+                            SHOP NOW
+                        </a>
+                    </li>
+                    <li class="discount-list__item discount-list__item_ceramic-plate-bg">
+                        <div class="discount-list__sale-text">
+                            Flat 70% Sale
+                        </div>
+                        <div class="discount-list__product-name">
+                            Ceramic plate
+                        </div>
+                        <a
+                            href="#"
+                            class="discount-list__product-link"
+                        >
+                            SHOP NOW
+                        </a>
+                    </li>
+                </ul>
+
+                <section class="products">
+                    <div class="products__wrapper">
+                        <h2 class="products__title">
+                            Top Products
+                        </h2>
+                        <ul class="products__list">
+                            <li class="products__item products-item">
+                                <img
+                                    src="img/auis-nostrum-ullamb@2x.jpg"
+                                    alt="Auis Nostrum Ullamb"
+                                    class="products-item__img"
+                                    
+                                >
+                                <button
+                                    type="button"
+                                    class="products-item__btn-favorites"
+                                >
+                                    <img 
+                                        src="img/favourites.svg"
+                                        alt="Избранное"
+                                        width="24"
+                                        height="24"
+                                    >                              
+                                </button>
+                                <div class="products-item__hidden-buttons">
+                                    <a
+                                        href="#"
+                                        class="products-item__product-link"
+                                    >
+                                        <img 
+                                            src="img/eye.svg"
+                                            alt="Обзор"
+                                            width="24"
+                                            height="24"
+                                        >  
+                                    </a>
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-add-to-cart link-button"
+                                    >
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <p class="products-item__price">
+                                    $50
+                                </p>
+                                <p class="products-item__product-name">
+                                    Auis Nostrum Ullamb
+                                </p>
+                                <img 
+                                    class="products-item__rating"
+                                    src="img/rating.svg"
+                                    alt="Звезды рейтинга"
+                                    width="80"
+                                    height="16"
+                                >
+                            </li>
+                            <li class="products__item products-item">
+                                <img
+                                    src="img/nulla-risus-massa@2x.jpg"
+                                    alt="Nulla-risus-massa"
+                                    class="products-item__img"
+                                    
+                                >
+                                <div class="products-item__hidden-buttons">
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-favorites"
+                                    >
+                                        <img 
+                                            src="img/favourites.svg"
+                                            alt="Избранное"
+                                            width="24"
+                                            height="24"
+                                        >                              
+                                    </button>
+                                    <a
+                                        href="#"
+                                        class="products-item__product-link"
+                                    >
+                                        <img 
+                                            src="img/eye.svg"
+                                            alt="Обзор"
+                                            width="24"
+                                            height="24"
+                                        >
+                                    </a>
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-add-to-cart link-button link-button_long"
+                                    >
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <p class="products-item__price">
+                                    $54
+                                </p>
+                                <p class="products-item__product-name">
+                                    Nulla risus massa
+                                </p>
+                                <img 
+                                    class="products-item__rating"
+                                    src="img/rating.svg"
+                                    alt="Звезды рейтинга"
+                                    width="80"
+                                    height="16"
+                                >
+                            </li>
+                            <li class="products__item products-item">
+                                <img
+                                    src="img/mauris-eget-diam-magn@2x.jpg"
+                                    alt="Mauris-eget-diam-magn"
+                                    class="products-item__img"
+                                    
+                                >
+                                <div class="products-item__hidden-buttons">
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-favorites"
+                                    >
+                                        <img 
+                                        src="img/favourites.svg"
+                                        alt="Избранное"
+                                        width="24"
+                                        height="24"
+                                    >                              
+                                    </button>
+                                    <a
+                                        href="#"
+                                        class="products-item__product-link"
+                                    >
+                                        <img 
+                                            src="img/eye.svg"
+                                            alt="Обзор"
+                                            width="24"
+                                            height="24"
+                                        >
+                                    </a>
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-add-to-cart link-button link-button_long"
+                                    >
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <p class="products-item__price">
+                                    $30
+                                </p>
+                                <p class="products-item__product-name">
+                                    Mauris eget diam magn
+                                </p>
+                                <img 
+                                    class="products-item__rating"
+                                    src="img/rating.svg"
+                                    alt="Звезды рейтинга"
+                                    width="80"
+                                    height="16"
+                                >
+                            </li>
+                            <li class="products__item products-item">
+                                <img
+                                    src="img/lorem-ipsum-dolor@2x.jpg"
+                                    alt="Lorem -ipsum-dolor"
+                                    class="products-item__img"
+                                    
+                                >
+                                <div class="products-item__hidden-buttons">
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-favorites"
+                                    >
+                                        <img 
+                                            src="img/favourites.svg"
+                                            alt="Избранное"
+                                            width="24"
+                                            height="24"
+                                        >                              
+                                    </button>
+                                    <a
+                                        href="#"
+                                        class="products-item__product-link"
+                                    >
+                                        <img 
+                                            src="img/eye.svg"
+                                            alt="Обзор"
+                                            width="24"
+                                            height="24"
+                                        >
+                                    </a>
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-add-to-cart link-button link-button_long"
+                                    >
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <p class="products-item__price">
+                                    $150
+                                </p>
+                                <p class="products-item__product-name">
+                                    Lorem ipsum dolor
+                                </p>
+                                <img 
+                                    class="products-item__rating"
+                                    src="img/rating.svg"
+                                    alt="Звезды рейтинга"
+                                    width="80"
+                                    height="16"
+                                >
+                            </li>
+                            <li class="products__item products-item">
+                                <img
+                                    src="img/harum-quidem-qmnis@2x.jpg"
+                                    alt="Harum-Quidem-Omnis"
+                                    class="products-item__img"
+                                    
+                                >
+                                <div class="products-item__hidden-buttons">
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-favorites"
+                                    >
+                                        <img 
+                                            src="img/favourites.svg"
+                                            alt="Избранное"
+                                            width="24"
+                                            height="24"
+                                        >  
+                                    </button>
+                                    <a
+                                        href="#"
+                                        class="products-item__product-link"
+                                    >
+                                        <img 
+                                            src="img/eye.svg"
+                                            alt="Обзор"
+                                            width="24"
+                                            height="24"
+                                        >
+                                    </a>
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-add-to-cart link-button link-button_long"
+                                    >
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <p class="products-item__price">
+                                    $50
+                                </p>
+                                <p class="products-item__product-name">
+                                    Harum Quidem Omnis
+                                </p>
+                                <img 
+                                    class="products-item__rating"
+                                    src="img/rating.svg"
+                                    alt="Звезды рейтинга"
+                                    width="80"
+                                    height="16"
+                                >
+                            </li>
+                            <li class="products__item products-item">
+                                <img
+                                    src="img/in-cursus-faucibus@2x.jpg"
+                                    alt="In-cursus-faucibus"
+                                    class="products-item__img"
+                                    
+                                >
+                                <div class="products-item__hidden-buttons">
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-favorites"
+                                    >
+                                        <img 
+                                            src="img/favourites.svg"
+                                            alt="Избранное"
+                                            width="24"
+                                            height="24"
+                                        >                              
+                                    </button>
+                                    <a
+                                        href="#"
+                                        class="products-item__product-link"
+                                    >
+                                        <img 
+                                            src="img/eye.svg"
+                                            alt="Обзор"
+                                            width="24"
+                                            height="24"
+                                        >
+                                    </a>
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-add-to-cart link-button link-button_long"
+                                    >
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <p class="products-item__price">
+                                    $80
+                                </p>
+                                <p class="products-item__product-name">
+                                    In cursus faucibus
+                                </p>
+                                <img 
+                                    class="products-item__rating"
+                                    src="img/rating.svg"
+                                    alt="Звезды рейтинга"
+                                    width="80"
+                                    height="16"
+                                >
+                            </li>
+                            <li class="products__item products-item">
+                                <img
+                                    src="img/dolor-sit-amet@2x.jpg"
+                                    alt="Dolor-sit-amet"
+                                    class="products-item__img"
+                                    
+                                >
+                                <div class="products-item__hidden-buttons">
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-favorites"
+                                    >
+                                        <img 
+                                            src="img/favourites.svg"
+                                            alt="Избранное"
+                                            width="24"
+                                            height="24"
+                                        >                              
+                                    </button>
+                                    <a
+                                        href="#"
+                                        class="products-item__product-link"
+                                    >
+                                        <img 
+                                            src="img/eye.svg"
+                                            alt="Обзор"
+                                            width="24"
+                                            height="24"
+                                        > 
+                                    </a>
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-add-to-cart link-button link-button_long"
+                                    >
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <p class="products-item__price">
+                                    $70
+                                </p>
+                                <p class="products-item__product-name">
+                                    Dolor sit amet
+                                </p>
+                                <img 
+                                    class="products-item__rating"
+                                    src="img/rating.svg"
+                                    alt="Звезды рейтинга"
+                                    width="80"
+                                    height="16"
+                                >
+                            </li>
+                            <li class="products__item products-item">
+                                <img
+                                    src="img/etiam-nec-mass@2x.jpg"
+                                    alt="Etiam-nec-mass"
+                                    class="products-item__img"
+                                    
+                                >
+                                <div class="products-item__hidden-buttons">
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-favorites"
+                                    >
+                                        <img 
+                                            src="img/favourites.svg"
+                                            alt="Избранное"
+                                            width="24"
+                                            height="24"
+                                        >                              
+                                    </button>
+                                    <a
+                                        href="#"
+                                        class="products-item__product-link"
+                                    >
+                                        <img 
+                                            src="img/eye.svg"
+                                            alt="Обзор"
+                                            width="24"
+                                            height="24"
+                                        >
+                                    </a>
+                                    <button
+                                        type="button"
+                                        class="products-item__btn-add-to-cart link-button link-button_long"
+                                    >
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <p class="products-item__price">
+                                    $43
+                                </p>
+                                <p class="products-item__product-name">
+                                    Etiam nec mass
+                                </p>
+                                <img 
+                                    class="products-item__rating"
+                                    src="img/rating.svg"
+                                    alt="Звезды рейтинга"
+                                    width="80"
+                                    height="16"
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <a
+                        href="#"
+                        class="products__link-more-products"
+                    >
+                        VIEW MORE PRODUCTS
+                    </a>
+                </section>
+
+                <div class="offers-list">
+                    <a 
+                        href="#"
+                        class="offers-list__link"
+                    >
+                        <span class="offers-list__prize">$100</span>
+                        FREE SHIPPING FOR STANDARD
+                    </a>
+                    <a
+                        href="#"
+                        class="offers-list__link"
+                    >
+                        <span class="offers-list__prize">$50</span>
+                        FREE GIFT CARDS & VOUCHERS
+                    </a>
+                    <a
+                        href="#"
+                        class="offers-list__link"
+                    >
+                        <span class="offers-list__prize">70km</span>
+                        FREE RETURN URBAN COUNTRY
+                    </a>
+                </div>
+
+                <section class="promo-banner">
+                    <div class="promo-banner__wrapper">
+                        <div class="promo-banner__item">
+                            <img 
+                                src="img/ceramic@2x.jpg"
+                                alt="Керамическая посуда"
+                                class="promo-banner__img"
+                            >
+                            <h4 class="promo-banner__title">
+                                Designed For Ceramic,
+                                Just For You.
+                            </h4>
+                            <p class="promo-banner__text">
+                                Lorem Ipsum is simply dummy text of the printings the types
+                                industry.
+                            </p>
+                            <a
+                                href="#"
+                                class="promo-banner__link link-button link-button_short"
+                            >
+                                READ MORE
+                            </a>
+                        </div>
+                        <div class="promo-banner__item">
+                            <h4 class="promo-banner__title">
+                                Designed For Ceramic,
+                                Just For You.
+                            </h4>
+                            <p class="promo-banner__text">
+                                Lorem Ipsum is simply dummy text of the printings the types
+                                industry. Lorem Ipsum has been the industry’s that standards dummy text ever since the 1500s, when an unknown
+                            </p>
+                            <a
+                                href="#"
+                                class="promo-banner__link link-button link-button_short"
+                            >
+                                READ MORE
+                            </a>
+                            <img 
+                                src="img/ceramic-2@2x.jpg"
+                                alt="Керамическая посуда"
+                                class="promo-banner__img promo-banner__img_bottom"
+                            >
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <ul class="footer__info-list info-list">
+                <li class="info-list__contact-us info-list-item">
+                    <p class="info-list__title">
+                        Contact us
+                    </p>
+                    <a
+                        href="tel:+79885453223"
+                        class="info-list__telephone-number"
+                    >
+                        988 545 32 23
+                    </a>
+                </li>
+                <li class="info-list__email info-list-item">
+                    <p class="info-list__title">
+                        Email
+                    </p>
+                    <a
+                        href="mailto:sayhi@gmail.com"
+                        class="info-list__email-link"
+                    >
+                        sayhi@gmail.com
+                    </a>
+                </li>
+                <li class="info-list__location info-list-item">
+                    <p class="info-list__title">
+                        Location
+                    </p>
+                    <address class="info-list__address">
+                        40005, Silver Business Point USA
+                    </address>
+                </li>
+            </ul>
+
+            <ul class="footer__list footer-column hidden-on-mobile">
+                <li class="footer-column__item footer-column__item_bold-text">
+                    Your Account
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        Personal info
+                    </a>
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        Orders
+                    </a>
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        Credit
+                    </a>
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        Address
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer__list footer-column hidden-on-mobile">
+                <li class="footer-column__item footer-column__item_bold-text">
+                    Our Company
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        About us
+                    </a>
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        FAQs
+                    </a>
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        Contact
+                    </a>
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        Sitemap
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer__list footer-column hidden-on-tablet">
+                <li class="footer-column__item footer-column__item_bold-text">
+                    Products
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        New Product
+                    </a>
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        Specials
+                    </a>
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        Best Product
+                    </a>
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        Price drop
+                    </a>
+                </li>
+                <li class="footer-column__item">
+                    <a
+                        href="#"
+                        class="footer-column__link"
+                    >
+                        Delivery
+                    </a>
+                </li>
+            </ul>
+
+            <a
+                href="#"
+                class="footer__mobile-link"
+            >
+                More links
+            </a>
+            <div class="footer__copyright copyright">
+                Copyright 2020 Limo all rights reserved
+            </div>
+        </footer>
+    </body>
+</html>

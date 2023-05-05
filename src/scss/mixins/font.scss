@@ -1,0 +1,21 @@
+@mixin font (
+    $size,
+    $line-height,
+    $weight: 400px,
+    $color: null
+) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin font-face ($font-family, $font-path) {
+    @font-face {
+        font-family: '#{$font-family}';
+        src: local('#{$font-family}'),
+            url('#{$font-path}.woff2') format('woff2'),
+            url('#{$font-path}.woff') format('woff'),
+            url('#{$font-path}.ttf') format("ttf");
+    }    
+}

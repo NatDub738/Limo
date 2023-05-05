@@ -1,0 +1,23 @@
+.copyright {
+    margin-top: 8rem;
+    width: 100%;
+    padding: 2rem 0;
+
+    @include font(1.4rem, 1.7rem, 500, $text-on-dark-bg);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+    background: $copyright-bg;
+
+    @include screen-till($tablet) {
+        grid-column: 1;
+    }
+
+    @include screen-between($tablet, $desktop) {
+        grid-column: 1 / 4;
+    }
+
+    @include screen-from($desktop) {
+        grid-column: 1 / 5;
+    }
+}

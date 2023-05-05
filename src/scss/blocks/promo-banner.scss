@@ -1,0 +1,98 @@
+.promo-banner {
+    &__wrapper {
+        @include flex (space-between, wrap, $column-gap: 2rem, $row-gap: 2rem);
+
+        margin: 11rem 0 0 0;
+
+        @include screen-till($tablet) {
+            flex-direction: column;
+        }
+
+        @include screen-till($desktop) {
+            margin-top: 4rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__item {
+        display: grid;
+        justify-content: space-between;
+        row-gap: 1.5rem;
+
+        height: auto;
+        width: 48.5%;
+
+        @include screen-till($tablet) {
+            row-gap: 0;
+
+            margin-bottom: 5%;
+            width: 100%;
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+        object-position: center;
+
+        &_bottom {
+            margin-top: 4%;
+    
+            @include screen-till($tablet) {
+                margin: 0;
+                grid-row: 1;
+            }
+        }
+    }
+
+    &__title {
+        width: 62.5%;
+        margin-top: 4%;
+
+        @include font(3.2rem, 4.4rem, 700);
+
+        @include screen-till($tablet) {
+            width: 100%;
+            margin-top: 1rem;
+
+            @include font(2.8rem, 3.8rem);
+        }
+
+        @include screen-till($desktop) {
+            margin-top: 0;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        width: 84.7%;
+
+        @include font(1.8rem, 2.8rem, 400);
+
+        @include screen-till($tablet) {
+            margin-bottom: 2rem;
+            width: 100%;
+
+            line-height: 2.2rem;
+        }
+
+        @include screen-till($desktop) {
+            width: 100%;
+
+            font-size: 1.4rem;
+        }
+    }
+
+    &__link {
+        width: fit-content;
+        margin-top: 7%;
+
+        @include screen-till($tablet) {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        @include screen-till($desktop) {
+            margin-top: 0;
+        }
+    }
+}

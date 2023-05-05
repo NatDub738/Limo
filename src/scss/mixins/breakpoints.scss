@@ -1,0 +1,19 @@
+@mixin screen-till ($max-width) {
+    $max-width: $max-width - 1px;
+    @media (max-width: $max-width) {
+        @content;
+    }
+}
+
+@mixin screen-between ($min-width, $max-width) {
+    $max-width: $max-width - 1px;
+    @media (min-width: $min-width) and (max-width: $max-width) {
+        @content;
+    }
+}
+
+@mixin screen-from ($min-width) {
+    @media (min-width: $min-width) {
+        @content;
+    }
+}
